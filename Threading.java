@@ -1,6 +1,7 @@
-class Test implements Runnable{
+// By implementing the runnable interface
+class Threading implements Runnable{
 	public static void main(String[] args){
-		Test t = new Test();
+		Threading t = new Threading();
 		Thread thread = new Thread(t);
 		t.run();
 		//t.start();
