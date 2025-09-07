@@ -1,8 +1,9 @@
-public class Test extends Test1{
+import java.util.*;
+
+public class Test{
 	public static void main(String[] args){
-		Test t = new Test();
-		t.before();
-		System.out.println(t.display());
-		t.show();
+		Scanner sc = new Scanner(System.in);
+		int i = sc.nextInt();
+		System.out.println("The number entered is :"+i);
 	}
 }
