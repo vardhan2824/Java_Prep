@@ -1,5 +1,10 @@
+package MyPackage1;
+
 public class Test {
-    public static void main(String args[]) {
-        System.out.println("First argument: " + args[0]);
-    }
+		int x = 10;
+	
+	public void display(){
+		System.out.println(x);
+	}
+	
 }
