@@ -12,3 +12,12 @@ class Test1{
 		System.out.println("The variable outside the method "+i);
 	}
 }
+
+public class Test extends Test1{
+	public static void main(String[] args){
+		Test t = new Test();
+		t.before();
+		System.out.println(t.display());
+		t.show();
+	}
+}
