@@ -1,4 +1,3 @@
-package MyPackage1;
 
 public class Test {
 		int x = 10;
@@ -8,3 +7,5 @@ public class Test {
 	}
 	
 }
+
+
