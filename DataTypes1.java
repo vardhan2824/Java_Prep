@@ -49,6 +49,15 @@ public class DataTypes1{
 	System.out.println("Number of items: " + items);
 	System.out.println("Cost per item: " + costPerItem + currency);
 	System.out.println("Total cost = " + totalCost + currency);
+	
+	// Using of the Var datatype
+	var myNum1 = 5;         // int
+	var myDouble2 = 9.98;   // double
+	var myChar = 'D';      // char
+	var myBoolean = true;  // boolean
+	var myString = "Hello"; // String
+	
+	System.out.println(myNum1 + " // This is a var Int variable");
 	}
 
 }
