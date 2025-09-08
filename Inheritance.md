@@ -1,3 +1,15 @@
+class Test{
+	int i;
+	double j;
+	Test(int i ,int j){
+		this.i = i;
+		this.j = j;
+	}
+	void display(){
+		System.out.println(i+" "+j);
+	}
+}
+
 class Test1 extends Test{
 	int k;
 	Test1(int i,int j,int k){

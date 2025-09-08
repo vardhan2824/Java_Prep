@@ -1,9 +1,11 @@
-import java.util.*;
-
-public class Test{
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		int i = sc.nextInt();
-		System.out.println("The number entered is :"+i);
+class Test{
+	int i;
+	double j;
+	Test(int i ,int j){
+		this.i = i;
+		this.j = j;
+	}
+	void display(){
+		System.out.println(i+" "+j);
 	}
 }
