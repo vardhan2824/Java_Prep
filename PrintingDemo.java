@@ -6,7 +6,7 @@ public class PrintingDemo {
         double pi = 3.14159;
         char grade = 'A';
         boolean isJavaFun = true;
-
+		
         // ---- Using println (concatenation) ----
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
@@ -24,5 +24,8 @@ public class PrintingDemo {
         // ---- Multiple values together ----
         System.out.printf("%s is %d years old, got grade %c, loves Java: %b, and knows pi ≈ %.3f%n",
                           name, age, grade, isJavaFun, pi);
+		// %-15s → left justify String in 15 width
+		// %03d   → integer, width 3, pad with leading zeros
+		System.out.printf("%-15s%03d%n", name, age);
     }
 }
