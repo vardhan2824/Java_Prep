@@ -1,18 +1,24 @@
-import java.util.*;
+class Test extends Thread{
+	public static void main(String args[]){
+		// Test t1 = new Test();
+		Testing r2 = new Testing();
+		Thread t2 = new Thread(r2);
+		// t1.start();
+		// t2.start();
+		t2.setName("Second Thread");
+		t2.start();
+		System.out.println(Thread.currentThread()+" "+t2.getName());
+		//t1.join();
+	}
+	public void run(){
+		System.out.println("Thread Running");
+	}
+}
 
-// nextBoolean()	Reads a boolean value from the user
-// nextByte()	Reads a byte value from the user
-// nextDouble()	Reads a double value from the user
-// nextFloat()	Reads a float value from the user
-// nextInt()	Reads a int value from the user
-// nextLine()	Reads a String value from the user
-// nextLong()	Reads a long value from the user
-// nextShort()	Reads a short value from the user
-
-class Test{
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		String s = sc.nextLine();
-		System.out.println(s);
+class Testing implements Runnable{
+	 public void run(){
+		for(int i = 0;i < 4;i++){
+			System.out.println(i);
+		}
 	}
 }
